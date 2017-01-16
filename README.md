@@ -7,7 +7,8 @@ PDF parser written in Python 3 (backport to 2.7 in the works).  This was designe
 ##Usage (dev branch)
 ```python
 import requests
-from gymnast import PdfDocument, PdfTextRenderer
+from gymnast import PdfDocument
+from gymnast.renderer import PdfTextRenderer
 
 url = 'http://www.census.gov/retail/mrts/www/data/pdf/ec_current.pdf'
 r = requests.get(url)
